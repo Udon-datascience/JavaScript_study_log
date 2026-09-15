@@ -1,3 +1,8 @@
+#teaching aids
+template
+_common/
+
+
 # Logs
 logs
 *.log
@@ -143,7 +148,3 @@ vite.config.ts.timestamp-*
 .vite/
 
 
-
-#teaching aids
-template.html
-_common
