@@ -29,8 +29,10 @@
 
 <script>
 'use strict';
-let answer = window.prompt('ヘルプを見ますか？');
-console.log(answer);
+const answer = window.prompt('ヘルプを見ますか？: y/n');
+if(answer == 'y'){
+    window.alert('タップでジャンプして障害物を避けます')
+}
 </script>
 
 </body>
