@@ -1,5 +1,17 @@
 #JS_useful_code
 
+
+・演算子
 ==   ↔ !=　　 （ゆるい判定）
 ===  ↔ !==　　（厳密な判定）
 
+
+・HTMLに命令して、本文を書き換える
+<section>
+    <p id="tag1"></p>
+</section>
+
+<script>
+'use strict';
+document.getElementById('number').textContent += i + ' ';
+</script>
