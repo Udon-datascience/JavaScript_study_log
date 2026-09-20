@@ -17,8 +17,13 @@
 </header>
 <main>
 <div class="container">
+
 <section>
+    <h1>やることリスト</h1>
+    <ul id="list">
+    </ul>
 </section>
+
 </div><!-- /.container -->
 </main>
 <footer>
@@ -39,8 +44,13 @@ console.log(toDo);
 for(let item of toDo){
     const li = `<li>${item}</li>`;
     console.log(li);
+    document.getElementById('list').insertAdjacentHTML('beforeend',li);
 }
 console.log(`すべきタスクは<${toDo}>です。`);
+/*改行が反映されることの実証*/
+console.log(`すべきタスクは
+<${toDo}>
+です。`);
 </script>
 
 </body>
