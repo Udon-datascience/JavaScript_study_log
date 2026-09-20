@@ -26,6 +26,19 @@
 <p>JavaScript Samples</p>
 </div><!-- /.container -->
 </footer>
+
+<script>
+'use strict';
+let jsbook = {title:'JavaScript入門', price:2500, stock:3};
+console.log(jsbook);
+console.log(jsbook.price);
+console.log(jsbook['price']);
+
+for(let p in jsbook){
+    console.log(p + '=' + jsbook[p]);
+}
+</script>
+
 </body>
 </html>
 
