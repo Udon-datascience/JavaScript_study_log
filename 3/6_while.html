@@ -17,10 +17,11 @@
 </header>
 <main>
 <div class="container">
+    
 <section>
-    <p id="number">ここに数字を表示します</p>
-
+    <p id="number"></p>
 </section>
+
 </div><!-- /.container -->
 </main>
 <footer>
@@ -34,11 +35,9 @@
 let i = 1;
 while(i <= 10){
     console.log(i);
-    document.getElementById('number').textContent = i;
+    document.getElementById('number').textContent += i + ' ';
     i = i + 1;
 }
-
-
 </script>
 
 </body>
