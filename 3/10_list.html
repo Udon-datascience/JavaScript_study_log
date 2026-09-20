@@ -27,9 +27,21 @@
 </div><!-- /.container -->
 </footer>
 
-<>
-
-
+<script>
+'use strict';
+let toDo = ['買い物','洗濯','プレゼン準備','レポート'];
+console.log(toDo[0]);
+for (let item of toDo){
+    console.log(item);
+}
+toDo.push('ご飯を炊く');
+console.log(toDo);
+for(let item of toDo){
+    const li = `<li>${item}</li>`;
+    console.log(li);
+}
+console.log(`すべきタスクは<${toDo}>です。`);
+</script>
 
 </body>
 </html>
