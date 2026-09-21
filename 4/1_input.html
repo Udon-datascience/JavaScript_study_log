@@ -34,10 +34,13 @@
 </div><!-- /.container -->
 </footer>mm
 
+/*JavaScriptによるformタグの呼び出し → JavaScriptによるoutputタグの呼び出し → 入力内容の送信 → それに伴うURL変更と再読み込み*/
 <script>
 'use strict';
-document.getElementById('form').onsubmit = function(){
-    console.log('クリックされました');
+document.getElementById('form').onsubmit = function(event){
+    event.preventDefault();
+    const search = document.getElementById('form').word.value;
+    document.getElementById('output').textContent = `「${search}」の検索中・・・`;
 };
 </script>
 
