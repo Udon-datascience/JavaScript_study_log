@@ -19,7 +19,7 @@
 <div class="container">
 
 <section>
-    <p>最終アクセス日時:<span id="time"></span></p>
+    <p>最終アクセス日時:<span id="time1"></span></p>
     <p>最終アクセス日時:<span id="time2"></span></p>
 </section>
 
@@ -44,7 +44,8 @@ const min = now.getMinutes();
 const output = `${year}/${month + 1}/${date} ${hour}:${min}`
 document.getElementById('time1').textContent = output;
 
-const ampm = 0
+let ampm = ' '
+let re_hour = 0
 if(hour >= 13){
     re_hour = hour - 12;
     ampm = 'p.m.';
