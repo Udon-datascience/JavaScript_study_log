@@ -20,6 +20,7 @@
 
 <section>
     <p>最終アクセス日時:<span id="time"></span></p>
+    <p>最終アクセス日時:<span id="time2"></span></p>
 </section>
 
 </div><!-- /.container -->
@@ -41,7 +42,19 @@ const hour = now.getHours();
 const min = now.getMinutes();
 
 const output = `${year}/${month + 1}/${date} ${hour}:${min}`
-document.getElementById('time').textContent = output;
+document.getElementById('time1').textContent = output;
+
+const ampm = 0
+if(hour >= 13){
+    re_hour = hour - 12;
+    ampm = 'p.m.';
+}else{
+    re_hour = hour;
+    ampm = 'a.m.';
+}
+
+const output2 = `${year}/${month + 1}/${date} ${re_hour}${ampm}`
+document.getElementById('time2').textContent = output2;
 </script>
 
 </body>
